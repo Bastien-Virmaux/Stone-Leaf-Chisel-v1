@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #1A1A2E;
+}
+
+.botGameContainer,
+.PlayerGameContainer{
+    width: 1412px;
+    height: 360px;
+    padding: 30px;
+}
+
+.botGameContainer{
+    background-color: #2C394B;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gif{
+    width: 23%;
+    display: block;
+}
+
+.PlayerGameContainer{
+    background-color: #2D4263;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pseudo{
+    width: 350px;
+    height: 60px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botGameContainer .pseudo{
+    margin: 49px 0 0 0;
+    background: #334756;
+}
+
+.PlayerGameContainer .pseudo{
+    background: #C84B31;
+}
+
+.chose{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonChose, 
+.responseBot{
+    width: 300px;
+    height: 150px;
+    background: #ECDBBA;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    color: #191919;
+    cursor: pointer;
+}
+
+.responseBot{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.buttonLeave{
+    width: 250px;
+    height: 50px;
+    background: #EB1D36;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.state{
+    color: #FFF;
+}
+.select{
+    background-color: #C84B31;
+    color: #FFF;
+}
+
+.circle1, .circle2{
+    border: 5px solid #30475E;
+    border-radius: 50px;
+}
+
+.containerTimer{
+    display: none;
+}
+
+.circle1{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.circle2{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.timer{
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*POPUP*/
+
+.popup{
+    width: 500px;
+    padding: 50px;
+    background-color: #222831;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.titlePopUp{
+    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+hr{
+    width: 100%;
+    margin: 0 0 30px 0;
+    border: 1px solid #FFD369;
+}
+.paragraphPopUp{
+    margin: 30px 0 30px 0;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #FFFF;
+}
+.paragraphPopUp span{
+    color: #FFD369;
+}
+.buttonContainer{
+    width: 100%;
+}
+button{
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+.leave, .restart{
+    margin: 20px 0 0 0;
+    background-color: #EB1D36;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+.restart{
+    background-color: #FFD369;
+    color: #222831;
+}
+
+/*MEDIA*/
+
+@media screen and (max-width: 1415px){
+    .botGameContainer,
+    .PlayerGameContainer{
+        width: 100%;
+    }
+    .gif{
+        width: 50%;
+    }
+    .buttonChose, 
+    .responseBot{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .botGameContainer,
+    .PlayerGameContainer{
+        width: 100%;
+        height: unset;
+    }
+    .gif{
+        width: 100%;
+    }
+    .pseudo{
+        width: 100%;
+    }
+    .PlayerGameContainer .pseudo{
+        margin: 0 0 12px 0;
+    }
+    .chose{
+        flex-direction: column;
+    }
+    .buttonChose, 
+    .responseBot{
+        width: 100%;
+        height: 50px;
+        margin: 0 0 10px 0;
+    }
+    .buttonLeave{
+        display: none;
+    }
+    .popup{
+        width: 100%;
+        margin: 10px;
+    }
+    .paragraphPopUp{
+        text-align: center;
+    }
+}
