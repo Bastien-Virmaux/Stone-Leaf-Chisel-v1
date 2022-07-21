@@ -4,7 +4,7 @@
 
 # To see the project
 
-[Stone, Leaf, Chisel ?](https://bastien22022.github.io/Stone-Leaf-Chisel-/)
+[Stone, Leaf, Chisel ?](https://bastien22022.github.io/Stone-Leaf-Chisel/)
 
 # ideas
 
